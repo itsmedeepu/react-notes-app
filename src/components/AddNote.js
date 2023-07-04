@@ -35,6 +35,17 @@ const AddNote = () => {
       localStorage.setItem("notes", JSON.stringify(getNote));
       setAllNotes(JSON.parse(localStorage.getItem("notes")));
     }
+
+    toast.success("Note Added Sucessfully", {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
   };
 
   const handleInput = (event) => {
