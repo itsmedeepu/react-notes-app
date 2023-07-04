@@ -1,0 +1,8 @@
+.input-control > label {
+  display: block;
+  padding: 5px;
+}
+
+.input-control > input {
+  outline: none;
+}
